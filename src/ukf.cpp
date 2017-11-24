@@ -45,7 +45,6 @@ UKF::UKF() {
   // Radar measurement noise standard deviation radius change in m/s
   std_radrd_ = 0.3;
 
-<<<<<<< HEAD
   // Set state to not initialized
   is_initialized_ = false;
 
@@ -80,10 +79,6 @@ UKF::UKF() {
   lid_nis_out = false;
 
 
-=======
-  // Parameters above this line are scaffolding, do not modify
-  
->>>>>>> df35a49a33bfafaca05ad7583431b0970652e777
   /**
   TODO:
 
