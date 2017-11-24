@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter
+CMAKE_SOURCE_DIR = C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/UnscentedKF.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/UnscentedKF.dir/flags.make
 
 CMakeFiles/UnscentedKF.dir/src/ukf.cpp.obj: CMakeFiles/UnscentedKF.dir/flags.make
 CMakeFiles/UnscentedKF.dir/src/ukf.cpp.obj: ../src/ukf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/UnscentedKF.dir/src/ukf.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\UnscentedKF.dir\src\ukf.cpp.obj -c C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\ukf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/UnscentedKF.dir/src/ukf.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\UnscentedKF.dir\src\ukf.cpp.obj -c C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\ukf.cpp
 
 CMakeFiles/UnscentedKF.dir/src/ukf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnscentedKF.dir/src/ukf.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\ukf.cpp > CMakeFiles\UnscentedKF.dir\src\ukf.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\ukf.cpp > CMakeFiles\UnscentedKF.dir\src\ukf.cpp.i
 
 CMakeFiles/UnscentedKF.dir/src/ukf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnscentedKF.dir/src/ukf.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\ukf.cpp -o CMakeFiles\UnscentedKF.dir\src\ukf.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\ukf.cpp -o CMakeFiles\UnscentedKF.dir\src\ukf.cpp.s
 
 CMakeFiles/UnscentedKF.dir/src/ukf.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/UnscentedKF.dir/src/ukf.cpp.obj.provides.build: CMakeFiles/UnscentedK
 
 CMakeFiles/UnscentedKF.dir/src/main.cpp.obj: CMakeFiles/UnscentedKF.dir/flags.make
 CMakeFiles/UnscentedKF.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/UnscentedKF.dir/src/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\UnscentedKF.dir\src\main.cpp.obj -c C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/UnscentedKF.dir/src/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\UnscentedKF.dir\src\main.cpp.obj -c C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\main.cpp
 
 CMakeFiles/UnscentedKF.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnscentedKF.dir/src/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\main.cpp > CMakeFiles\UnscentedKF.dir\src\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\main.cpp > CMakeFiles\UnscentedKF.dir\src\main.cpp.i
 
 CMakeFiles/UnscentedKF.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnscentedKF.dir/src/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\main.cpp -o CMakeFiles\UnscentedKF.dir\src\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\main.cpp -o CMakeFiles\UnscentedKF.dir\src\main.cpp.s
 
 CMakeFiles/UnscentedKF.dir/src/main.cpp.obj.requires:
 
@@ -106,16 +106,16 @@ CMakeFiles/UnscentedKF.dir/src/main.cpp.obj.provides.build: CMakeFiles/Unscented
 
 CMakeFiles/UnscentedKF.dir/src/tools.cpp.obj: CMakeFiles/UnscentedKF.dir/flags.make
 CMakeFiles/UnscentedKF.dir/src/tools.cpp.obj: ../src/tools.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/UnscentedKF.dir/src/tools.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\UnscentedKF.dir\src\tools.cpp.obj -c C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\tools.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/UnscentedKF.dir/src/tools.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\UnscentedKF.dir\src\tools.cpp.obj -c C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\tools.cpp
 
 CMakeFiles/UnscentedKF.dir/src/tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnscentedKF.dir/src/tools.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\tools.cpp > CMakeFiles\UnscentedKF.dir\src\tools.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\tools.cpp > CMakeFiles\UnscentedKF.dir\src\tools.cpp.i
 
 CMakeFiles/UnscentedKF.dir/src/tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnscentedKF.dir/src/tools.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\src\tools.cpp -o CMakeFiles\UnscentedKF.dir\src\tools.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\src\tools.cpp -o CMakeFiles\UnscentedKF.dir\src\tools.cpp.s
 
 CMakeFiles/UnscentedKF.dir/src/tools.cpp.obj.requires:
 
@@ -144,7 +144,7 @@ UnscentedKF.exe: CMakeFiles/UnscentedKF.dir/build.make
 UnscentedKF.exe: CMakeFiles/UnscentedKF.dir/linklibs.rsp
 UnscentedKF.exe: CMakeFiles/UnscentedKF.dir/objects1.rsp
 UnscentedKF.exe: CMakeFiles/UnscentedKF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable UnscentedKF.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable UnscentedKF.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\UnscentedKF.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -163,6 +163,6 @@ CMakeFiles/UnscentedKF.dir/clean:
 .PHONY : CMakeFiles/UnscentedKF.dir/clean
 
 CMakeFiles/UnscentedKF.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filter\cmake-build-debug\CMakeFiles\UnscentedKF.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug C:\Users\Admin\Documents\GitHub\Udacity-Unscented-Kalman-Filters\cmake-build-debug\CMakeFiles\UnscentedKF.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/UnscentedKF.dir/depend
 
