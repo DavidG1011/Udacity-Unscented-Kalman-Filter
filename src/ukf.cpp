@@ -7,10 +7,6 @@ using Eigen::MatrixXd;
 using Eigen::VectorXd;
 using std::vector;
 
-/**
- * Initializes Unscented Kalman filter
- * This is scaffolding, do not modify
- */
 UKF::UKF() {
   // if this is false, laser measurements will be ignored (except during init)
   use_laser_ = true;
@@ -43,7 +39,7 @@ UKF::UKF() {
   std_radphi_ = 0.03;
 
   // Radar measurement noise standard deviation radius change in m/s
-  std_radrd_ = 0.3;
+  std_radrd_ = 0.35;
 
   // Set state to not initialized
   is_initialized_ = false;
@@ -78,14 +74,6 @@ UKF::UKF() {
   // Set to calculate and output lidar NIS
   lid_nis_out = false;
 
-
-  /**
-  TODO:
-
-  Complete the initialization. See ukf.h for other member properties.
-
-  Hint: one or more values initialized above might be wildly off...
-  */
 }
 
 UKF::~UKF() {}
@@ -99,9 +87,8 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package)
 
   if (!is_initialized_)
   {
-
-     x_ <<  0,0,1.0,1.0,0.1;
-
+	 x_ <<  1, 0.75, 1, 1, 0.2;	 
+	  
      P_ <<  1, 0, 0, 0, 0,
             0, 1, 0, 0, 0,
             0, 0, 1, 0, 0,
@@ -111,12 +98,14 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package)
     if (meas_package.sensor_type_ == MeasurementPackage::RADAR && use_radar_)
     {
 
-      float rho = meas_package.raw_measurements_(1);
-
-      float phi = meas_package.raw_measurements_(2);
+      float rho = meas_package.raw_measurements_(0);
+      float phi = meas_package.raw_measurements_(1);
+	  float x = rho * cos(phi);
+	  float y = rho * sin(phi);
 
       //x_ = mag * cos(ang) , y = mag * sin(ang)
-      x_ << rho * cos(phi), rho * sin(phi);
+      x_(0) = x;
+	  x_(1) = y;
 
     }
     else if (meas_package.sensor_type_ == MeasurementPackage::LASER && use_laser_)
@@ -157,14 +146,9 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package)
  * @param {double} delta_t the change in time (in seconds) between the last
  * measurement and this one.
  */
-void UKF::Prediction(double delta_t) {
-  /**
-  TODO:
-
-  Complete this function! Estimate the object's location. Modify the state
-  vector, x_. Predict sigma points, the state, and the state covariance matrix.
-  */
-
+void UKF::Prediction(double delta_t) 
+{
+ 
   //-------------------Generate Sigma points---------------------
 
   // Create sigma point matrix
@@ -304,11 +288,6 @@ void UKF::Prediction(double delta_t) {
 void UKF::UpdateLidar(MeasurementPackage meas_package)
 {
 
-  /**
-  TODO:
-        calculate the lidar NIS.
-  */
-
   //-------------------Predict-----------------------------------
 
   int n_z = 2;
@@ -412,10 +391,6 @@ void UKF::UpdateLidar(MeasurementPackage meas_package)
  */
 void UKF::UpdateRadar(MeasurementPackage meas_package)
 {
-  /**
-  TODO:
-        calculate the radar NIS.
-  */
 
   //-------------------Predict Measurement-----------------------
 
