@@ -31,7 +31,7 @@ Tips for setting up your environment can be found [here](https://classroom.udaci
 
 ---
 
-## Important Dependencies
+### Important Dependencies
 * cmake >= 3.5
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
@@ -43,7 +43,7 @@ Tips for setting up your environment can be found [here](https://classroom.udaci
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 
-## Basic Build Instructions
+### Basic Build Instructions
 
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
@@ -54,7 +54,7 @@ from the simulator.
 ---
 
 
-## NIS (Normalized Innovation Squared)
+### NIS (Normalized Innovation Squared)
 
 One of the methods employed for testing accuracy and consistency was to use NIS (Normalized Innovation Squared). To calculate NIS, this method first measures the innovation, which is the difference between the estimated positions and the ground truth value. This difference is then normalized by the inverse of the vector S. NIS says that in a 3 dimentional space, approximately 5% of the NIS values should be over 7.8. with a proper implementation of your algorithm. This seems to hold about true when looking at the charts for lidar and radar NIS values:
 
@@ -65,7 +65,7 @@ One of the methods employed for testing accuracy and consistency was to use NIS 
 ![alt text][image2]
 
 
-## RMSE (Root Mean Square Error)
+### RMSE (Root Mean Square Error)
 
 The minimum required RMSE values for this project are as follows: 
 
@@ -87,7 +87,7 @@ The final values attained for this project were:
 
 - VY 0.2497
 
-## Improved Accuracy Of A New Algorithm
+### Improved Accuracy Of A New Algorithm
 
 The RMSE values mentioned above can be compared to the old values I recieved from an extended kalman filter with the same radar and lidar measurements:
 
@@ -100,7 +100,7 @@ The RMSE values mentioned above can be compared to the old values I recieved fro
 
 Overall a decent increase. My value for Y went up a very small amount, but the other increases in accuracy, especially for velocity, clearly outweigh it. 
 
-### Reasons for accuracy increase: 
+Reasons for accuracy increase:
 
 The CRTV (Constant Turn Rate and Velocity Magnitude) model used for this project handles velocity much better than the model used for the extended kalman filter. This model is also better with non-linear functions.  
 
