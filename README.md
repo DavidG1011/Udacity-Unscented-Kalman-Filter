@@ -1,6 +1,14 @@
+[//]: # (Image References)
+
+[image1]: ./imgs/lidarnis.png "Lidar NIS"
+[image2]: ./imgs/radarnis.png "Radar NIS"
+
+
 # Unscented Kalman Filter Project and Bonus
 
 Self-Driving Car Engineer Nanodegree Program
+
+Rubric [Here](https://review.udacity.com/#!/rubrics/783/view)
 
 # Bonus Catch Runaway Car Solution Located [Here](https://github.com/DavidG1011/Udacity-Catch-Runaway-Car-Challenge)
 
@@ -46,5 +54,57 @@ from the simulator.
 ---
 
 
+## NIS (Normalized Innovation Squared)
+
+One of the methods employed for testing accuracy and consistency was to use NIS (Normalized Innovation Squared). To calculate NIS, this method first measures the innovation, which is the difference between the estimated positions and the ground truth value. This difference is then normalized by the inverse of the vector S. NIS says that in a 3 dimentional space, approximately 5% of the NIS values should be over 7.8. with a proper implementation of your algorithm. This seems to hold about true when looking at the charts for lidar and radar NIS values:
 
 
+![alt text][image1]
+
+
+![alt text][image2]
+
+
+## RMSE (Root Mean Square Error)
+
+The minimum required RMSE values for this project are as follows: 
+
+- X:  0.09
+
+- Y:  0.10
+
+- VX: 0.40
+
+- VY: 0.30
+
+The final values attained for this project were:
+
+- X  0.0755
+
+- Y  0.0845
+
+- VX 0.3210
+
+- VY 0.2497
+
+## Improved Accuracy Of A New Algorithm
+
+The RMSE values mentioned above can be compared to the old values I recieved from an extended kalman filter with the same radar and lidar measurements:
+
+|  Old        |  New       | Accuracy Increase |
+|:-----------:|:----------:|:-----------------:|
+|X  0.0996    | X  0.0755  |  + 24  %          | 
+|Y  0.0837    | Y  0.0845  |  - 0.9 %          | 
+|VX  0.4517   | VX  0.3210 |  + 29  %          |
+|VY  0.4419   | VY  0.2497 |  + 43  %          |
+
+Overall a decent increase. My value for Y went up a very small amount, but the other increases in accuracy, especially for velocity, clearly outweigh it. 
+
+### Reasons for accuracy increase: 
+
+The CRTV (Constant Turn Rate and Velocity Magnitude) model used for this project handles velocity much better than the model used for the extended kalman filter. This model is also better with non-linear functions.  
+
+
+# More Info
+
+This project is essentially an improvement to an extended kalman filter implementation discussed above. This unscented CTRV implementation uses a more accurate algorithm than the EKF, but the same lidar/radar data and simulator. This is why the RMSE values can be directly compared for accuracy between models. More info about this can be found in my extended kalman filter repo located [Here](https://github.com/DavidG1011/Udacity---Extended-Kalman-Filters)
